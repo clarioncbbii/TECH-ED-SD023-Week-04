@@ -34,4 +34,18 @@ app.get("/", (req, res) => {
 
 //TODO: Route to READ data from the database (GET)
 
+//route --> "/reviews"
+//HTTP method GET (= READ)
+app.get("/reviews", async function (req, res) {
+  //query the database
+  const query = await dbPool.query(
+    `SELECT name, location, review, rating FROM chopandnyam;`
+  );
+  // helps in case server is not working - server console logs are in terminal
+  console.log(query);
+  //parse the response from this route into JSON and wrangle it to show just the rows property
+  res.json(query.rows);
+});
+
 //TODO: Route to CREATE data from the database (POST)
+//this will need to be tested in POSTMAN! NOT THE CLIENT!

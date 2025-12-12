@@ -5,13 +5,19 @@
     <link rel="icon" type="#" href="#" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CHOP&NYAM</title>
+    <!-- link favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <!-- link social media icons for footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link stylesheet and script -->
     <link rel="stylesheet" href="./src/styles.css" />
     <script type="module" src="./src/app.js" defer></script>
   </head>
 
   <body>
     <header>
-      <h1>WE WANT TO HEAR FROM YOU!</h1>
+      <h1>WELCOME TO CHOP&NYAM</h1>
+      <h2>Can you spare two cents? We'd love yours!</h1>
       <nav>
         <a href="#">ABOUT US</a>
         <a href="#">REVIEWS</a>
@@ -30,23 +36,24 @@
         <label for="location">Where are you visiting from:</label>
         <input type="text" name="location" required />
 
-        <label for="review">Let us know your thoughts:</label>
+        <label for="review">How was your experience?</label>
         <input
           type="text"
           name="review"
           required
-          placeholder="What did you think of our food and service? Keep it real!"
+          placeholder="Don't be shy...keep it real!"
         />
 
-        <label for="rating">What would you rate </label>
+        <label for="rating">What would you rate us? </label>
         <input type="number" name="review" required min="1" max="10" />
 
-        <button type="submit">SUBMIT</button>
+        <button id="submit-button" type="submit">SUBMIT</button>
       </form>
     </section>
 
     <section>
       <footer>
+        <div><a href="https://www.flaticon.com/free-icons/restaurant" title="restaurant icons">Restaurant icons created by Freepik - Flaticon</a></div>
         <div id="footer-div" class="socials">
           <a href="https://www.facebook.com" class="fa fa-facebook"></a>
           <a href="https://www.instagram.com" class="fa fa-instagram"></a>
@@ -55,11 +62,11 @@
 
         <div>
           <a href="https://github.com/clarioncbbii"
-            >DESIGNED AND BUIULT BY CLARIONCBBII</a
+            >designed and built by clarioncbbii</a
           >
         </div>
 
-        <div><button>BACK TO TOP</button></div>
+        <div><button id="backtotop-button">BACK TO TOP</button></div>
       </footer>
     </section>
   </body>

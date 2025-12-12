@@ -22,8 +22,13 @@ INSERT INTO chopandnyam (name, location, review, rating) VALUES
 
 -- read some data from the table: *THIS IS WHAT WE WANT THE SERVER TO DO - see folder 05 in week 4*
 SELECT name, location, review, rating FROM chopandnyam;
+
+-- a few other tests for functionality
 SELECT name, review FROM chopandnyam;
 SELECT name, location, review, rating FROM chopandnyam WHERE rating >= 8;
 SELECT name FROM chopandnyam WHERE name = 'Stranger';
+
 -- We usually do not select IDs to be revealed to the user (= sensitive data)
+
+
 
