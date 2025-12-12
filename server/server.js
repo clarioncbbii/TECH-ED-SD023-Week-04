@@ -27,7 +27,7 @@ app.listen(PORT, () => {
 app.get("/", (req, res) => {
   //res.json({message:"Welcome to the server. GET comfy!"}) --> only allows us to send JSON format
   // you can  use send method to send non-JSON, such as HTML instead, in string format:
-  res.send("<h1>WELCOME TO THE SERVER :)</h1> <h2>GET COMFY BELOVED!</h2>");
+  res.send("<h1>Welcome to the SERVER</h1> <h2>GET comfy!</h2>");
 });
 
 // ==============================
