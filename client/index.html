@@ -8,8 +8,59 @@
     <link rel="stylesheet" href="./src/styles.css" />
     <script type="module" src="./src/app.js" defer></script>
   </head>
+
   <body>
+    <header>
+      <h1>WE WANT TO HEAR FROM YOU!</h1>
+      <nav>
+        <a href="#">ABOUT US</a>
+        <a href="#">REVIEWS</a>
+        <a href="#">CONTACT US</a>
+      </nav>
+    </header>
     <!-- //TODO: An element to allow users to input data -->
     <!-- use semantic tags e.g. form with all the necessary bells and whistles -->
+    <!-- the types in your html need to match the types you have in your database -->
+    <!-- client, server and database operate holistically -->
+    <section>
+      <form id="review-form">
+        <label for="name">What is your name?</label>
+        <input type="text" name="name" required />
+
+        <label for="location">Where are you visiting from:</label>
+        <input type="text" name="location" required />
+
+        <label for="review">Let us know your thoughts:</label>
+        <input
+          type="text"
+          name="review"
+          required
+          placeholder="What did you think of our food and service? Keep it real!"
+        />
+
+        <label for="rating">What would you rate </label>
+        <input type="number" name="review" required min="1" max="10" />
+
+        <button type="submit">SUBMIT</button>
+      </form>
+    </section>
+
+    <section>
+      <footer>
+        <div id="footer-div" class="socials">
+          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+        </div>
+
+        <div>
+          <a href="https://github.com/clarioncbbii"
+            >DESIGNED AND BUIULT BY CLARIONCBBII</a
+          >
+        </div>
+
+        <div><button>BACK TO TOP</button></div>
+      </footer>
+    </section>
   </body>
 </html>
