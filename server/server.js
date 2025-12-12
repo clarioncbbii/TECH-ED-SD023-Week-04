@@ -24,6 +24,7 @@ app.listen(PORT, () => {
 
 //TODO: READ a welcome message
 //ROOT route
+//route --> "/"
 app.get("/", (req, res) => {
   //res.json({message:"Welcome to the server. GET comfy!"}) --> only allows us to send JSON format
   // you can  use send method to send non-JSON, such as HTML instead, in string format:
@@ -41,7 +42,7 @@ app.get("/reviews", async function (req, res) {
   const query = await dbPool.query(
     `SELECT name, location, review, rating FROM chopandnyam;`
   );
-  // helps in case server is not working - server console logs are in terminal
+  // helps in case server is not working - SERVER CONSOLE LOGS ARE IN THE TERMINAL; NOT THE CLIENT!
   console.log(query);
   //parse the response from this route into JSON and wrangle it to show just the rows property
   res.json(query.rows);
@@ -49,3 +50,17 @@ app.get("/reviews", async function (req, res) {
 
 //TODO: Route to CREATE data from the database (POST)
 //this will need to be tested in POSTMAN! NOT THE CLIENT!
+//route --> "/reviews"
+//HTTP method POST (= CREATE)
+
+app.post("/reviews", (req, res) => {
+  //to receive the data from the client; in the request object - i need the body property - and formValues are part of the body
+  const newReview = req.body.formValues;
+  console.log(newReview); //do this to see if this is working
+  const query = dbPool.query(
+    `INSERT INTO chopandnyam (name, location, review, rating) VALUES ($1, $2, $3, $4)`,
+    [newReview.name, newReview.location, newReview.review, newReview.rating]
+  );
+  //optional: for our peace of mind we can add a response
+  res.json({ status: "success", values: newReview });
+});
