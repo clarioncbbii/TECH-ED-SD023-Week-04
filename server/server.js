@@ -58,8 +58,8 @@ app.post("/reviews", (req, res) => {
   const newReview = req.body.formValues;
   console.log(newReview); //do this to see if this is working
   const query = dbPool.query(
-    `INSERT INTO chopandnyam (name, location, review, rating) VALUES ($1, $2, $3, $4),
-    [newReview.name, newReview.location, newReview.review, newReview.rating]`
+    `INSERT INTO chopandnyam (name, location, review, rating) VALUES ($1, $2, $3, $4)`,
+    [newReview.name, newReview.location, newReview.review, newReview.rating]
   );
   //optional: for our peace of mind we can add a response
   res.json({ status: "success", values: newReview });
