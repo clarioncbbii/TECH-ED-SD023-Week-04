@@ -16,7 +16,7 @@ CREATE TABLE chopandnyam (
 
 -- create new data into the table (DUMMY DATA for testing):
 INSERT INTO chopandnyam (name, location, review, rating) VALUES 
-('Nene','Leicester', 'It was a pleasure visiting this location of Chop&Nyam - I will deffo be back for those eats!', 9)
+('Nene','Leicester', 'It was a pleasure visiting this location of Chop&Nyam...100% RECOMMEND - I will deffo be back for those eats!', 9)
 
 -- SQL does not like double quotes! Use single quotes or backticks for strings!
 

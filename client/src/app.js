@@ -72,7 +72,7 @@ async function createReviews() {
   const reviewData = await getData();
   const reviewContainer = document.getElementById("review-container");
 
-  for (let i = 6; i < reviewData.length; i++) {
+  for (let i = 0; i < reviewData.length; i++) {
     const reviewDiv = document.createElement("div");
     const reviewName = document.createElement("h3");
     const reviewLocation = document.createElement("p");
