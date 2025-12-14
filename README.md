@@ -23,6 +23,9 @@ Feel free to add any other reflections you would like to share about your submis
   https://www.webdevtutor.net/blog/javascript-button-onclick-confirm-submit-form?
 
 - What errors or bugs did you encounter while completing your assignment? How did you solve them?
+  I wanted to create a back to top button which sort of floats and only shows up when you scroll down but I failed about 4 times.
+  Eventually stumbled across: https://discourse.devontechnologies.com/t/floating-back-to-top-button-in-markdown-documents/71696
+  I implemented it and modified it to work for me and voila - it works
 
 - What went really well and what could have gone better?
   I created a mindmap before I started coding which helped me greatly - and I created a workflow as I went along to ensure I was not leaving steps out AND so when it comes to the next time I need to do this, I can spend less time of figuring out the order of things, and more time on execution.
@@ -100,7 +103,7 @@ Style the website section by section – use headers to separate your CSS code b
 
 ...
 
-Honestly, the only thing that could have gone better would be if I was able to hit all the stretch requirements, but after the whole thing and a hectic weekend, I was exhausted. So I called it quits while I was ahead. I think this may well be my easiest assignment so far, in execution.
+The final that could have gone better would be if I was able to hit all the stretch requirements, but after the whole thing and a hectic weekend, I was exhausted. So I called it quits while I was ahead. I think this may well be my easiest assignment so far, in execution.
 
 <!-- ================================================================================= -->
 

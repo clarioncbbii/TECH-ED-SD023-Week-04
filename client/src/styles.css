@@ -7,8 +7,9 @@
 }
 
 /* TODO: Think about: */
-
 /* RESPONSIVE DESIGN --> media queries */
+/*ACCESSIBILITY */
+
 @media (width <= 600px) {
   body {
     display: flex;
@@ -23,7 +24,11 @@
   }
 }
 
-/*ACCESSIBILITY */
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 
 /* ============================================================== */
 
@@ -47,7 +52,7 @@ header {
 
 h1 {
   font-family: ravie;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: rgb(0, 56, 0);
   -webkit-text-stroke: 0.1px rgba(255, 81, 0, 0.7);
 }
@@ -63,13 +68,74 @@ nav {
 
 /* REVIEW DIV */
 
+#review-section {
+  padding: 2rem;
+}
+
 .review-div {
-  border: 1px;
+  padding: 1rem;
+  border-style: solid;
+  border-width: 0.5px;
   border-color: black;
 }
 
-/* SOCIAL MEDIA ICONS */
-/* Style all font awesome icons */
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  gap: 15x;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+
+#footer-div {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top-link {
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  color: #000000;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem 1rem 0;
+  border-radius: 100%;
+  /* padding: 0.5rem; */
+  font-size: 2rem;
+  text-decoration: none;
+  width: 3rem;
+  height: 3rem;
+
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.125);
+  color: rgb(0, 0, 0);
+  border-color: rgba(255, 255, 255);
+  cursor: pointer;
+
+  font-weight: 500;
+}
+
+.top-link:hover {
+  background-color: rgba(255, 81, 0, 0.75);
+  color: rgb(255, 255, 255);
+}
+
+/* SOCIAL MEDIA ICONS - Style all font awesome icons */
+/* 
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -79,7 +145,7 @@ nav {
 }
 
 /* Add a hover effect if you want */
-.fa {
+/* .fa {
   padding: 20px;
   font-size: 30px;
   width: 30px;
@@ -94,14 +160,14 @@ nav {
 
 /* Set a specific color for each brand */
 
-/* Facebook */
+/* Facebook
 .fa-facebook {
   background: #3b5998;
   color: white;
 }
 
-/* Twitter */
+/* Twitter 
 .fa-twitter {
   background: #55acee;
   color: white;
-}
+} */

@@ -18,8 +18,10 @@
   </head>
 
   <body>
+    <a class="top-link hide" href="#top">↑</a>
+    <a name="top"></a>
     <header>
-      <img src="./public/assets/logo.png" alt="Chop&Nyam logo" />
+      <img src="./assets/logo.png" alt="Chop&Nyam logo" />
       <h1>WELCOME TO CHOP&NYAM</h1>
       <nav>
         <a href="#">ABOUT US</a>
@@ -30,7 +32,7 @@
     <marquee behavior="sliding" direction="left" scrollamount="5"
       ><p>
         WELCOME TO CHOP&NYAM - AFRO-CARIBBEAN KITCHEN & BAKERY - LOCATIONS IN
-        LEICESTER, BIRMINGHAM, MANCHESTER AND MANY MORE TO COME! - WE WANT TO
+        LEICESTER, BIRMINGHAM, MANCHESTER AND MANY MORE TO COME - WE WANT TO
         HEAR FROM YOU!
       </p></marquee
     >
@@ -89,28 +91,50 @@
 
     <section>
       <footer>
-        <div>
+        <div class="freepik">
           <a
-            href="https://www.flaticon.com/free-icons/restaurant"
+            href="https://www.flaticon.com/free-icon/restaurant_2180150?term=restaurant&page=1&position=95&origin=tag&related_id=2180150"
             title="restaurant icons"
-            >Restaurant icons created by Freepik - Flaticon</a
+          >
+            Favicon by Freepik - Flaticon</a
           >
         </div>
         <div id="footer-div" class="socials">
-          <a href="https://www.facebook.com" class="fa fa-facebook">Facebook</a>
-          <a href="https://www.instagram.com" class="fa fa-instagram">
-            Instagram</a
+          <a
+            aria-label="Facebook logo"
+            href="https://www.facebook.com"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            aria-label="Instagram logo"
+            href="https://www.instagram.com"
+            class="fa fa-instagram"
           >
-          <a href="https://www.twitter.com" class="fa fa-twitter"> Twitter</a>
+          </a>
+          <a
+            aria-label="Twitter logo"
+            href="https://www.twitter.com"
+            class="fa fa-twitter"
+          >
+          </a>
         </div>
 
-        <div>
+        <div class="creator">
           <a href="https://github.com/clarioncbbii"
             >designed and built by clarioncbbii</a
           >
         </div>
 
-        <div><button id="backtotop-button">BACK TO TOP</button></div>
+        <!-- did not use the traditional back to top button - see Reflections -->
+        <!-- <div>            
+          <button
+            onclick="topFunction()"
+            id="backtotop-button"
+            title="Go to top"
+          > 
+            BACK TO TOP
+          </button>
+        </div> -->
       </footer>
     </section>
   </body>
