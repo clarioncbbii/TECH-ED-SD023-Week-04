@@ -29,7 +29,7 @@
     <!-- the types in your html need to match the types you have in your database -->
     <!-- client, server and database operate holistically -->
     <section id="review-section">
-      <form id="review-form">
+      <form id="review-form" onsubmit="alert('Thank you! Your review has been submitted.')">
         <label for="name">What is your name?</label>
         <input type="text" name="name" required />
 
@@ -43,7 +43,9 @@
         <label for="rating">What would you rate us? </label>
         <input type="number" name="rating" required min="1" max="10" />
 
-        <button id="submit-button" type="submit">SUBMIT</button>
+        <button id="submit-button" type="submit" onclick="window.location.reload()= window.location.href" value="Reset">SUBMIT</button>
+
+
       </form>
     </section>
 <section id="review-container"></section>

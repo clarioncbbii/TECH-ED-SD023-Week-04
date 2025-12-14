@@ -82,8 +82,8 @@ async function createReviews() {
     // I need it to update the textContent using the API data
     reviewName.textContent = `My name is ${reviewData[i].name}`;
     reviewLocation.textContent = `I am visiting from: ${reviewData[i].location}`;
-    reviewRating.textContent = `I rate Chop&Nyam ${reviewData[i].rating} out of 10`;
-    reviewText.textContent = reviewData[i].review;
+    reviewRating.textContent = `I rate Chop&Nyam: ${reviewData[i].rating} out of 10`;
+    reviewText.textContent = `My review:"${reviewData[i].review}"`;
 
     //I need it to assign a class name
     reviewDiv.className = "review-div";

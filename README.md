@@ -16,6 +16,11 @@ Feel free to add any other reflections you would like to share about your submis
 
 - Requesting feedback about a specific part of your submission.
 - What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
+  I wanted to have a way to reset the page on submission of the form as well as a confirmation - for this I used following websites (and a bit of tinkering):
+  https://stackoverflow.com/questions/6515502/javascript-form-submit-confirm-or-cancel-submission-dialog-box#6515632
+  https://stackoverflow.com/questions/6666363/is-it-possible-to-clear-a-form-and-reset-reload-the-page-with-one-button#6666770
+  https://www.webdevtutor.net/blog/javascript-button-onclick-confirm-submit-form?
+
 - What errors or bugs did you encounter while completing your assignment? How did you solve them?
 - What went really well and what could have gone better?
 
