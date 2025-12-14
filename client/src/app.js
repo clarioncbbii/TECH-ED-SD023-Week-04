@@ -11,6 +11,10 @@ function handleSubmit(submitEvent) {
   console.log(formData);
   const formValues = Object.fromEntries(formData);
   console.log(formValues);
+  //TODO: EXTRA - On submit, the user gets a confirmation popup, the form data is cleared and the page is reloaded
+  addEventListener("submit", function () {
+    alert(`Thank you! Your review has been submitted.`);
+  });
 
   //Note: In the key:value pairs - the key is the 'name' attribute we set in HTML and the value is what the user gave us
   //now the formData contains the values
@@ -106,3 +110,14 @@ async function createReviews() {
 }
 //then I call the function:
 createReviews();
+
+// ===============================================//
+
+//! CODE GRAVEYARD:
+// - did not work -
+
+// function confirmSubmit() {
+//   if (confirm(`Are you sure you want to submit the form?`)) {
+//     document.getElementById("review-form").submit();
+//   }
+// }
