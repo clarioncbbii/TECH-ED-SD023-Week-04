@@ -9,10 +9,57 @@
 /* TODO: Think about: */
 
 /* RESPONSIVE DESIGN --> media queries */
+@media (width <= 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 10vh;
+    width: 100vh;
+    position: absolute;
+    top: 3vh;
+    bottom: auto;
+    overflow: scroll;
+  }
+}
 
 /*ACCESSIBILITY */
 
-/* ================================= */
+/* ============================================================== */
+
+/* LOGO IMAGE */
+img {
+  height: 10rem;
+  width: auto;
+}
+
+/* HEADER */
+
+header {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* font-family: ink free/gabriola/ravie */
+
+h1 {
+  font-family: ravie;
+  font-size: 3.5rem;
+  color: rgb(0, 56, 0);
+  -webkit-text-stroke: 0.1px rgba(255, 81, 0, 0.7);
+}
+
+nav {
+  font-family: nyala;
+  font-size: 1rem;
+  color: rgb(0, 56, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* REVIEW DIV */
 

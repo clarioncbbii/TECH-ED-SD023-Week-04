@@ -8,7 +8,10 @@
     <!-- link favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
     <!-- link social media icons for footer -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- link stylesheet and script -->
     <link rel="stylesheet" href="./src/styles.css" />
     <script type="module" src="./src/app.js" defer></script>
@@ -16,46 +19,89 @@
 
   <body>
     <header>
+      <img src="./public/assets/logo.png" alt="Chop&Nyam logo" />
       <h1>WELCOME TO CHOP&NYAM</h1>
-      <h2>Can you spare two cents? We'd love yours!</h1>
       <nav>
         <a href="#">ABOUT US</a>
         <a href="#">REVIEWS</a>
         <a href="#">CONTACT US</a>
       </nav>
     </header>
+    <marquee behavior="sliding" direction="left" scrollamount="5"
+      ><p>
+        WELCOME TO CHOP&NYAM - AFRO-CARIBBEAN KITCHEN & BAKERY - LOCATIONS IN
+        LEICESTER, BIRMINGHAM, MANCHESTER AND MANY MORE TO COME! - WE WANT TO
+        HEAR FROM YOU!
+      </p></marquee
+    >
     <!-- //TODO: An element to allow users to input data -->
     <!-- use semantic tags e.g. form with all the necessary bells and whistles -->
     <!-- the types in your html need to match the types you have in your database -->
     <!-- client, server and database operate holistically -->
     <section id="review-section">
+      <h2>CAN YOU SPARE TWO CENTS? BECAUSE WE'D LOVE YOURS!</h2>
       <form id="review-form">
         <label for="name">What is your name?</label>
-        <input type="text" name="name" required />
+        <input aria-label="Name input field" type="text" name="name" required />
 
         <label for="location">Where are you visiting from:</label>
-        <input type="text" name="location" required />
+        <input
+          aria-label="Location input field"
+          type="text"
+          name="location"
+          required
+        />
 
         <label for="review">How was your experience?</label>
         <input
-          type="text" name="review" required placeholder="Don't be shy...keep it real!"/>
+          aria-label="Review input field"
+          type="text"
+          name="review"
+          required
+          placeholder="Don't be shy...keep it real!"
+        />
 
         <label for="rating">What would you rate us? </label>
-        <input type="number" name="rating" required min="1" max="10" />
+        <input
+          aria-label="Rating input field"
+          type="number"
+          name="rating"
+          required
+          min="1"
+          max="10"
+        />
 
-        <button id="submit-button" type="submit" onclick="window.location.reload() = window.location.href" value="Reset">SUBMIT</button>
+        <button
+          aria-label="Submit button"
+          id="submit-button"
+          type="submit"
+          onclick="window.location.reload() = window.location.href"
+          value="Reset"
+        >
+          SUBMIT
+        </button>
       </form>
     </section>
 
-    <section id="review-container"></section>
+    <section id="review-container">
+      <h3>HERE IS THE COLLECTIVE CONSCIOUSNESS OF CHOP&NYAM</h3>
+    </section>
 
     <section>
       <footer>
-        <div><a href="https://www.flaticon.com/free-icons/restaurant" title="restaurant icons">Restaurant icons created by Freepik - Flaticon</a></div>
+        <div>
+          <a
+            href="https://www.flaticon.com/free-icons/restaurant"
+            title="restaurant icons"
+            >Restaurant icons created by Freepik - Flaticon</a
+          >
+        </div>
         <div id="footer-div" class="socials">
-          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
-          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com" class="fa fa-facebook">Facebook</a>
+          <a href="https://www.instagram.com" class="fa fa-instagram">
+            Instagram</a
+          >
+          <a href="https://www.twitter.com" class="fa fa-twitter"> Twitter</a>
         </div>
 
         <div>

@@ -23,7 +23,84 @@ Feel free to add any other reflections you would like to share about your submis
   https://www.webdevtutor.net/blog/javascript-button-onclick-confirm-submit-form?
 
 - What errors or bugs did you encounter while completing your assignment? How did you solve them?
+
 - What went really well and what could have gone better?
+  I created a mindmap before I started coding which helped me greatly - and I created a workflow as I went along to ensure I was not leaving steps out AND so when it comes to the next time I need to do this, I can spend less time of figuring out the order of things, and more time on execution.
+
+ASSIGNMENT SEQUENCE:
+
+(1)
+
+- set up Github repo
+- set up client (Vite)
+- set up server (Express)
+
+(2)
+
+- create database table (Supabase)
+- copy SQL queries into a queries.sql file for reference (in server folder)
+- set up .env and dbConnection.js
+- deploy client and server (Render)
+
+Client deploy should work if setup was done correctly.
+If server deploy fails, make sure: port and root route have been set up correctly
+
+(3)
+Return to client HTML and setup form to match the database entries and validation
+Also code out the general structure & link any favicons/social media icons in the head
+
+(4)
+In the server, create GET route (your root route should have already been created pre-deploy)
+Test in POSTMAN, in addition to browser
+Check console for any issues also
+
+(5)
+In the server, create POST route.
+To test this in Postman, you have to send a body along with the POST request
+
+POSTMAN - POST route template:
+{"formValues": {
+"name": "Test data",
+"location": "Test data",
+"review": "Test data",
+"rating": 10
+}
+}
+
+(6)
+Build client app.js to handle form action before sending data through the client
+
+Then setup fetch for POST server route
+
+Fetch POST server route template:
+
+fetch("url", {
+method:,
+headers: {
+},
+body: JSON.stringify()
+})
+
+(7) To render users’ data on the interface, you need to set up fetch from server GET route using an async function (like you would with an API)
+
+Test this using the client, in case your form is not processing the data properly (see object in Console). Also doublecheck in the database or using the localhost GET route
+
+(8)
+Then setup the DOM elements needed to render the reviews as elements the user can interact with them
+
+This entails creating a function e.g. createReviews – in the argument:
+
+- declare two constants; one to get your database data and one to select your review div from HTML
+- then, using a loop, create the HTML elements in the DOM, update the textContent and assign className
+- append the elements appropriately (elements to div + div to container)
+- call the function
+
+(9)
+Style the website section by section – use headers to separate your CSS code because there are A LOT of elements at play
+
+...
+
+Honestly, the only thing that could have gone better would be if I was able to hit all the stretch requirements, but after the whole thing and a hectic weekend, I was exhausted. So I called it quits while I was ahead. I think this may well be my easiest assignment so far, in execution.
 
 <!-- ================================================================================= -->
 
