@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 //PORT setup
-const PORT = "https://chopandnyam-server.onrender.com";
+const PORT = 8080;
 
 app.listen(PORT, () => {
   console.info(`Server is live in port ${PORT}!`);
