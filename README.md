@@ -10,6 +10,7 @@ Please also provide an assignment reflection in your project README.md file.
   I styled the site for mutliple screen sizes by applying a media query
   I built the API get and post routes, seeded my DB with dummy data through various means
   And I think applied most the design fundamentals from weeks 1-3
+  My lighthouse report looked pretty good 
 
 - Were there any requirements or goals that you were unable to achieve?
   The stretch goals were truly beyond me this time.
