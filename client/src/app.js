@@ -72,9 +72,10 @@ async function createReviews() {
   const reviewData = await getData();
   const reviewContainer = document.getElementById("review-container");
 
+  //!wanted to have the newest reviews show up at the top but could not figure out how to get loop to work - tried changing i and the operator but no luch
   for (let i = 0; i < reviewData.length; i++) {
     const reviewDiv = document.createElement("div");
-    const reviewName = document.createElement("h3");
+    const reviewName = document.createElement("h4");
     const reviewLocation = document.createElement("p");
     const reviewRating = document.createElement("p");
     const reviewText = document.createElement("p");

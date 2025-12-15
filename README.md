@@ -122,3 +122,15 @@ The final that could have gone better would be if I was able to hit all the stre
 - Every time we push code to GitHub, Render picks up the changes and redeploys automatically.
 - Add the client link (from Render) on your GitHub repo
 - When your deployment fails, and at some points it most certainly will...REMEMBER: DO NOT PANIC! READ THE ERROR LOG! USE THE TROUBLESHOOTING GUIDE!
+
+<!-- ================================================================================= -->
+
+## REFERENCES
+
+Photo by <a href="https://unsplash.com/@ronisefoodie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ronise daluz</a> on <a href="https://unsplash.com/photos/person-holding-white-ceramic-plate-with-chicken-dish-WERPqT_E5jE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Photo by <a href="https://unsplash.com/@ajalakings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ajala Kings</a> on <a href="https://unsplash.com/photos/person-in-gray-long-sleeve-shirt-sitting-on-chair-LjgqZ5N7rxc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Photo by <a href="https://unsplash.com/@drxyz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dr Muhammad Amer</a> on <a href="https://unsplash.com/photos/fried-chicken-on-yellow-rice-77ItGP98s6g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Chop&Nyam logo is created by me - 2025
