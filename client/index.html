@@ -18,13 +18,14 @@
   </head>
 
   <body>
+    <!-- could not get this floating button to work with tab index with zero so took it out  -->
     <a class="top-link hide" href="#top">↑</a>
     <a name="top"></a>
     <header>
       <div id="logo">
         <img id="logo" src="./assets/logo.png" alt="Chop&Nyam logo" />
       </div>
-      <div id="titles">
+      <div >
         <h1>CUSTOMER GUESTBOOK</h1>
       </div>
 
@@ -54,7 +55,8 @@
       <div id="image2"><img src="./public/assets/customer.jpg" alt="#" /></div> -->
 
       <section id="form-section">
-        <h3 id="container-title">CAN YOU SPARE TWO CENTS?</h3>
+        <!-- section title seemed redundant and went against the design flow -->
+        <!-- <h3 id="container-title">CAN YOU SPARE TWO CENTS?</h3> -->
         <form id="review-form">
           <label for="name">What is your name?</label>
           <input
@@ -78,7 +80,7 @@
             type="text"
             name="review"
             required
-            placeholder="Don't be shy...keep it real!"
+            placeholder="How was your experience?"
           />
 
           <label for="rating">What would you rate us? </label>
@@ -102,12 +104,12 @@
           </button>
         </form>
       </section>
-    </section>
-    <section id="review-container">
-      <h3 id="display-title">
-        HERE IS THE COLLECTIVE CONSCIOUSNESS OF CHOP&NYAM'S CUSTOMERS:
+    </section>  
+    <h3 id="display-title">
+       TAKE A PEAK AT WHAT OUR OTHER CUSTOMERS HAD TO SAY:
       </h3>
-    </section>
+    <section id="review-container">
+        </section>
 
     <section>
       <footer>

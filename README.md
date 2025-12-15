@@ -27,6 +27,9 @@ Feel free to add any other reflections you would like to share about your submis
   Eventually stumbled across: https://discourse.devontechnologies.com/t/floating-back-to-top-button-in-markdown-documents/71696
   I implemented it and modified it to work for me and voila - it works
 
+I struggled terribly with getting a low opacity background image in - useful link was:
+http://stackoverflow.com/questions/7241341/ddg#27505936
+
 - What went really well and what could have gone better?
   I created a mindmap before I started coding which helped me greatly - and I created a workflow as I went along to ensure I was not leaving steps out AND so when it comes to the next time I need to do this, I can spend less time of figuring out the order of things, and more time on execution.
 
@@ -133,4 +136,6 @@ Photo by <a href="https://unsplash.com/@ajalakings?utm_source=unsplash&utm_mediu
 
 Photo by <a href="https://unsplash.com/@drxyz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dr Muhammad Amer</a> on <a href="https://unsplash.com/photos/fried-chicken-on-yellow-rice-77ItGP98s6g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-Chop&Nyam logo is created by me - 2025
+Background image - found on Google - https://assets.teenvogue.com/photos/66800d820464e03e1738c2ef/16:9/w_2560%2Cc_limit/GettyImages-1449703601%2520(1).jpg
+
+'Chop&Nyam' logo is created by me - 2025
