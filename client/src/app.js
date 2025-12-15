@@ -33,7 +33,7 @@ function handleSubmit(submitEvent) {
   //     body: JSON.stringify()
   // })
 
-  fetch("http://localhost:8080/reviews", {
+  fetch("https://chopandnyam-server.onrender.com/reviews", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ formValues }),
@@ -49,7 +49,9 @@ function handleSubmit(submitEvent) {
 //First, fetch the GET route from the server
 
 async function getData(url) {
-  const response = await fetch("http://localhost:8080/reviews");
+  const response = await fetch(
+    "https://chopandnyam-server.onrender.com/reviews"
+  );
   console.log(response);
   const data = await response.json();
   console.log(data);
@@ -59,19 +61,18 @@ async function getData(url) {
 //Then, render the data using DOM elements --> one per piece of data
 //e.g. 4 columns of data requires 4 DOM elements
 
-//! ---------- from week 3 assignment ----------
-// TODO: Create DOM elements for the shop upgrades
 //- create the element
 //- assign the value to its property (textContent)
 //- append it to the DOM (appendChild)
 //- after you complete this task, you should see the reviews in your client!
 
-// ** Create the function to create each upgrade in the shop **
-// I am selecting the shop container and storing it in a variable
+// I am selecting the main container and storing it in a variable
 async function createReviews() {
   const reviewData = await getData();
   const reviewContainer = document.getElementById("review-container");
 
+  //for each item, I need the function to create a div + repeat a number of actions (loop):
+  // I need it to create elements for each of its properties
   //!wanted to have the newest reviews show up at the top but could not figure out how to get loop to work - tried changing i and the operator but no luch
   for (let i = 0; i < reviewData.length; i++) {
     const reviewDiv = document.createElement("div");
@@ -80,11 +81,7 @@ async function createReviews() {
     const reviewRating = document.createElement("p");
     const reviewText = document.createElement("p");
 
-    //for each item (upgrade) in the shop, I need the function to create a div + repeat a number of actions (loop):
-
-    // I need it to create elements for each of its properties
-
-    // I need it to update the textContent using the API data
+    // I need it to update the textContent using the API
     reviewName.textContent = `My name is ${reviewData[i].name}`;
     reviewLocation.textContent = `I am visiting from: ${reviewData[i].location}`;
     reviewRating.textContent = `I rate Chop&Nyam: ${reviewData[i].rating} out of 10`;
@@ -97,13 +94,13 @@ async function createReviews() {
     reviewRating.className = "review-rating";
     reviewText.className = "review-text";
 
-    // I need it to append the name, cost and increase to the div in question
+    // I need it to append the sub-elements
     reviewDiv.appendChild(reviewName);
     reviewDiv.appendChild(reviewLocation);
     reviewDiv.appendChild(reviewRating);
     reviewDiv.appendChild(reviewText);
 
-    // I need to append each shop item container to the shop container for easier styling
+    // I need to append each review div to the main container for easier styling
     reviewContainer.appendChild(reviewDiv);
 
     console.log(reviewData[i]);
@@ -115,7 +112,7 @@ createReviews();
 // ===============================================//
 
 //! CODE GRAVEYARD:
-// - did not work -
+//! - did not work -
 
 // function confirmSubmit() {
 //   if (confirm(`Are you sure you want to submit the form?`)) {

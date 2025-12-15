@@ -7,8 +7,15 @@ Please also provide an assignment reflection in your project README.md file.
 ### Required:
 
 - What requirements did you achieve?
+  I styled the site for mutliple screen sizes by applying a media query
+  I built the API get and post routes, seeded my DB with dummy data through various means
+  And I think applied most the design fundamentals from weeks 1-3
+
 - Were there any requirements or goals that you were unable to achieve?
+  The stretch goals were truly beyond me this time.
+
 - If so, what was it that you found difficult about these tasks?
+  I knew what I wanted to do but frankly did not have enough time or energy to figure it out.
 
 ### Optional:
 
@@ -106,7 +113,7 @@ Style the website section by section – use headers to separate your CSS code b
 
 ...
 
-The final that could have gone better would be if I was able to hit all the stretch requirements, but after the whole thing and a hectic weekend, I was exhausted. So I called it quits while I was ahead. I think this may well be my easiest assignment so far, in execution.
+The final that could have gone better would be if I was able to hit all the stretch requirements, but after the whole thing and a hectic weekend, I was exhausted. So I called it quits while I was ahead. I think this may well be my most comfortable assignment so far, in execution.
 
 <!-- ================================================================================= -->
 
