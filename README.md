@@ -33,10 +33,9 @@ Feel free to add any other reflections you would like to share about your submis
 - What errors or bugs did you encounter while completing your assignment? How did you solve them?
   I wanted to create a back to top button which sort of floats and only shows up when you scroll down but I failed about 4 times.
   Eventually stumbled across: https://discourse.devontechnologies.com/t/floating-back-to-top-button-in-markdown-documents/71696
-  I implemented it and modified it to work for me and voila - it works
+  I implemented it and modified it to work for me and voila - it works.
 
-I struggled terribly with getting a low opacity background image in - useful link was:
-http://stackoverflow.com/questions/7241341/ddg#27505936
+  I struggled terribly with getting a low opacity background image in - useful link was: http://stackoverflow.com/questions/7241341/ddg#27505936
 
 - What went really well and what could have gone better?
   I created a mindmap before I started coding which helped me greatly - and I created a workflow as I went along to ensure I was not leaving steps out AND so when it comes to the next time I need to do this, I can spend less time of figuring out the order of things, and more time on execution.
